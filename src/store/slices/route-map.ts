@@ -24,7 +24,7 @@ const routeMap = createSlice({
   name: "route-map",
   initialState,
   reducers: {
-    fetchData: (state, { payload }: PayloadAction<RouteMap>) => {
+    fetchData: (state) => {
       state.loading = true
       state.succuss = false
       state.error = null
